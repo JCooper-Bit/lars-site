@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Intro - Lars Learning Series</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../css/style.min.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+<div id="book-search-input" role="search">
+<input type="text" placeholder="Type to search" />
+</div> <!-- end of book-search-input -->
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href=".." target="_blank" class="custom-link">Lars Learning Series</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="..">Home</a>
+<li class="chapter active" data-path="intro/">
+<a href="./">Intro</a>
+<li class="chapter" data-path="vec2/">
+<a href="../vec2/">2D Vectors</a>
+<li class="divider"></li>
+
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+<div id="book-search-results">
+<div class="search-noresults">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="introduction-and-setup">Introduction and Setup</h1>
+<p>This series is written to guide you through building your own linear algebra functionality from scratch.  </p>
+<p>Each section of the series focuses on a small, contained piece of functionality. By the end, you’ll have the foundation of a lightweight, modular linear algebra library that you can adapt for your own projects. You’ll also gain a better understanding of the mathematics behind it.</p>
+<p>The examples are written in <strong>Rust</strong>, but the concepts are language-agnostic. If you’re comfortable in another language, you can follow along just as easily.</p>
+<hr />
+<h2 id="what-youll-need">What You’ll Need</h2>
+<p>Before getting started, make sure you have the following:</p>
+<ul>
+<li>
+<p>A recent version of <strong>Rust</strong> installed<br />
+  You can check with:<br />
+<code>bash
+  rustc --version</code>
+  If it’s not installed, visit <a href="https://rustup.rs">https://rustup.rs</a> to set it up.</p>
+</li>
+<li>
+<p>A text editor or IDE that supports Rust<br />
+<a href="https://code.visualstudio.com/">VS Code</a> with the <a href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer">rust-analyzer</a> extension is a good option.</p>
+</li>
+<li>
+<p>Basic familiarity with programming concepts and a little comfort with Rust syntax.<br />
+  You don’t need to be an expert — we’ll go step by step.</p>
+</li>
+</ul>
+<hr />
+<h2 id="project-setup">Project Setup</h2>
+<p>Create a new Rust project to follow along:</p>
+<pre><code class="language-bash">cargo new linear_algebra_from_scratch
+cd linear_algebra_from_scratch
+</code></pre>
+<p>This will generate a new folder with a basic <code>Cargo.toml</code> and <code>src/main.rs</code>.</p>
+<p>You can either implement everything directly in <code>main.rs</code> or create separate modules as the project grows.<br />
+For example:</p>
+<pre><code>src/
+├── main.rs
+└── math/
+    ├── vec2.rs
+    ├── vec3.rs
+    └── matrix.rs
+</code></pre>
+<p>We’ll expand on this structure as we move through the guides.</p>
+<hr />
+<h2 id="how-to-follow-the-series">How to Follow the Series</h2>
+<p>Each guide introduces one concept at a time: starting simple and building complexity gradually.<br />
+You’ll find three main sections in each:</p>
+<ol>
+<li><strong>Concepts/Mathematical Background</strong>: an explanation of the underlying math and how it’s represented programmatically.  </li>
+<li><strong>Implementation</strong>: a series of tasks to write the code yourself.  </li>
+<li><strong>Solutions</strong>: a complete set of solutions showing one way to implement the concept.</li>
+</ol>
+<p>You’re encouraged to write and test your own code before checking the solution.<br />
+There’s no single “right” way to implement these ideas, and exploring different approaches is part of the learning process.</p>
+<hr />
+<h2 id="next-steps">Next Steps</h2>
+<p>When you’re ready, continue to the first real task: implementing a 2D vector type.<br />
+This will cover construction, basic arithmetic, and a few common operations used throughout linear algebra.</p>
+<p>Continue to the next guide:<br />
+<a href="../vec2/">2D Vector Guide →</a></p>
+<hr />
+<h3 id="about-the-author">About the Author</h3>
+<pre><code class="language-text">     ___  _______  __   __  _______  _______  _______ 
+    |   ||   _   ||  | |  ||       ||       ||       |
+    |   ||  |_|  ||  |_|  ||       ||    ___||    ___|
+    |   ||       ||       ||       ||   |___ |   |___ 
+ ___|   ||       ||_     _||      _||    ___||    ___|
+|       ||   _   |  |   |  |     |_ |   |___ |   |___ 
+|_______||__| |__|  |___|  |_______||_______||_______|
+</code></pre>
+<p><strong>J. Cooper</strong> (JayCee) is a software developer, Maths enthusiast and musician based in the UK. They are the creator and maintainer of the lars crate and they have various other projects in progress</p>
+<ul>
+<li><strong>GitHub</strong>: <a href="https://github.com/JCooper-Bit">@JCooper-Bit</a></li>
+<li><strong>Project Repo</strong>: <a href="https://github.com/JCooper-Bit/lars">lars on GitHub</a></li>
+</ul>
+<p><em>This article was published on October 29, 2025 with mkdocs.</em></p>
+
+
+</section>
+
+</div> <!-- end of no-results -->
+</div> <!-- end of search-results -->
+</div> <!-- end of book-search-results -->
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../js/main.js"></script>
+<script src="../search/main.js"></script>
+<script src="../js/gitbook.min.js"></script>
+<script src="../js/theme.min.js"></script>
+</body>
+</html>
